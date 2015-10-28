@@ -1,0 +1,46 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #FFF;
+  color: #60687F;
+  font-size: 24px;
+  font-size: 3vw;
+  line-height: 1.5em;
+}
+a {
+  color: #60687F;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+header {
+  padding: 5%;
+  text-align: center;
+  background: #3A4C7F;
+  color: white;
+}
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  font-size: 4vw;
+}
+.italic {
+  font-style: italic;
+}
+.name {
+  color: #C1D1FF;
+}
+.main {
+  text-align: center;
+  padding: 5% 0 10%;
+  height: 100%;
+  margin: 0 auto;
+}
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  background: #C1D1FF;
+  height: 2em;
+  width: 100%;
+}

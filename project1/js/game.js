@@ -94,16 +94,12 @@ Game.checkActors = function(actors) {
 
 // Make input element for searching movies
 Game.makeSearchInput = function() {
-  var searchExists = document.getElementById('movie-search');
-  if( !searchExists ) {
-    var movieInput = document.createElement('input');
-    movieInput.id = "movie-search";
-    movieInput.type = 'text';
-    movieInput.placeholder = 'Enter your movie here.';
-    movieInput.addEventListener( 'keyup' , Game.searchMovies , false );
-    return movieInput;
-  }
-  else return false;
+  var movieInput = document.createElement('input');
+  movieInput.id = "movie-search";
+  movieInput.type = 'text';
+  movieInput.placeholder = 'Enter your movie here.';
+  movieInput.addEventListener( 'keyup' , Game.searchMovies , false );
+  return movieInput;
 }
 
 // Query OMDB and get list of movies matching search
@@ -404,7 +400,7 @@ function Movie( data , isCorrect ) {
 
   this.encouragement = function() {
     var messages = ['You&rsquo;re doing an amazing job!', 'Wow, you&rsquo;re good at this!', 'You work in Hollywood, don&rsquo;t you.', 'You should be on Jeopardy!']
-    if( Game.score != 0 && Game.score % 3 == 0 && this.correct ) { // Every third point
+    if( Game.score != 0 && Game.score % 2 == 0 && this.correct ) { // Every two points
       var youRock = document.createElement('p');
       youRock.className = 'lead';
       youRock.id = 'encouragement';
@@ -479,7 +475,8 @@ function Error( message ) {
     }
     var parent = element.parentNode;
     parent.insertBefore( errorMessage , element );
-    if( movieInput ) {
+    var searchExists = document.getElementById('movie-search');
+    if( !searchExists ) {
       parent.insertBefore( movieInput, element );
     }
     Game.fadeInContainer();

@@ -1,0 +1,88 @@
+$main-color: #60687F;
+$main-fontstack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$light-blue: #C1D1FF;
+body {
+  font-family: $main-fontstack;
+  background: #FFF;
+  color: $main-color;
+  font-size: 16px;
+  font-size: 2vw;
+  line-height: 1.5em;
+  box-sizing: border-box;
+}
+a {
+  color: $main-color;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+}
+header {
+  padding: 5%;
+  text-align: center;
+  background: #3A4C7F;
+  color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  line-height: 1em;
+  margin: 0.25em;
+}
+h1 {
+  font-size: 28px;
+  font-size: 4vw;
+}
+h2 {
+  font-size: 24px;
+  font-size: 3.5vw;
+}
+h3 {
+  font-size: 21px;
+  font-size: 3vw;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+
+.italic {
+  font-style: italic;
+}
+.name {
+  color: $light-blue;
+}
+header p span {
+  padding: 0 .25em;
+}
+header p span:nth-child(even) {
+  color: $light-blue;
+}
+.main {
+  padding: 5% 5% 10%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+.main article {
+  float: left;
+  width: 50%;
+}
+.main article h3 {
+  margin-left: 1em;
+}
+.main article ul li {
+  margin-left: 2.5em;
+  padding: 0;
+}
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  background: $light-blue;
+  height: 2em;
+  width: 100%;
+}

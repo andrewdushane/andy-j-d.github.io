@@ -1,3 +1,3 @@
-#Profile page for Andy-J-D
+#Profile page for Andrew Dushane
 
-All of the projects and the things.
+Mah portfolio

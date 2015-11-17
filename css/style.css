@@ -56,7 +56,7 @@ header p span {
   padding: 0 .25em;
 }
 header p span:nth-child(even) {
-  color: #DDD;
+  color: #C1D1FF;
 }
 .main {
   padding: 5% 5% 10%;

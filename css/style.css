@@ -1,21 +1,32 @@
+html {
+  font-size: 20px; }
+
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   background: #FFF;
   color: #60687F;
-  font-size: 16px;
-  font-size: 2vw;
   line-height: 1.5em;
   box-sizing: border-box; }
 
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.push {
+  margin-bottom: 2em;
+  float: none;
+  clear: both; }
+
 a {
-  color: #60687F;
+  color: #333;
   text-decoration: none; }
 
 a:hover {
-  color: #000; }
+  color: #60687F; }
 
 header {
-  padding: 5%;
+  padding: 2rem;
   text-align: center;
   background: #3A4C7F;
   color: white; }
@@ -23,19 +34,17 @@ header {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1em;
-  margin: 0.25em; }
+  margin: 0.25rem; }
 
 h1 {
-  font-size: 28px;
-  font-size: 4vw; }
+  font-size: 2rem; }
 
 h2 {
-  font-size: 24px;
-  font-size: 3.5vw; }
+  font-size: 1.5rem;
+  color: #333; }
 
 h3 {
-  font-size: 21px;
-  font-size: 3vw; }
+  font-size: 1.25rem; }
 
 ul {
   margin: 0;
@@ -44,33 +53,62 @@ ul {
 ul li {
   list-style: none; }
 
+img {
+  width: 100%;
+  margin: 1rem auto;
+  box-sizing: border-box; }
+
+p {
+  margin: 0 0 1rem; }
+
 .italic {
   font-style: italic; }
 
 .name {
   color: #C1D1FF; }
 
+header h1 {
+  margin-top: 0; }
+
+header p {
+  margin-bottom: 0;
+  font-size: 0.8rem; }
+
 header p span {
-  padding: 0 .25em; }
+  padding: 0 .25rem; }
 
 header p span:nth-child(even) {
   color: #C1D1FF; }
 
 .main {
-  padding: 5% 5% 10%;
+  padding: 1rem 5%;
   height: 100%;
   margin: 0 auto;
-  text-align: left; }
+  text-align: left;
+  overflow: hidden; }
 
 .main article {
   float: left;
-  width: 50%; }
+  width: 45%;
+  margin-right: 5%; }
 
-.main article h3 {
-  margin-left: 1em; }
+.main article:nth-child(even) {
+  margin-right: 0; }
+
+.main article img {
+  width: 100%;
+  display: block;
+  float: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background: #EEE;
+  border-radius: 10px; }
+
+.main article h2 {
+  text-align: center; }
 
 .main article ul li {
-  margin-left: 2.5em;
+  margin-left: 2.5rem;
   padding: 0; }
 
 footer {
@@ -80,5 +118,19 @@ footer {
   background: #C1D1FF;
   height: 2em;
   width: 100%; }
+
+@media (max-width: 750px) {
+  html {
+    font-size: 16px; }
+
+  .main article {
+    float: none;
+    width: 94%;
+    margin: 0 3% 1em; } }
+@media (max-width: 650px) {
+  header h1 span {
+    display: block;
+    clear: both;
+    float: none; } }
 
 /*# sourceMappingURL=style.css.map */

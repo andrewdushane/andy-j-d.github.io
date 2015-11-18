@@ -1,7 +1,7 @@
 $main-color: #60687F;
 $main-font: 'Lato', sans-serif;
 $light-blue: #C1D1FF;
-$footer-height: 2em;
+$footer-height: 3rem;
 $dark-grey: #333;
 $site-width: 1200px;
 html {
@@ -121,12 +121,21 @@ header p span:nth-child(even) {
   padding: 0;
 }
 footer {
-  position:fixed;
-  left:0px;
-  bottom:0px;
   background: $light-blue;
   height: $footer-height;
   width: 100%;
+  text-align: right;
+  font-size: 1.75rem;
+  padding-top: 1rem;
+}
+footer i {
+  margin-left: 0.5rem;
+}
+footer a {
+  color: rgba(0, 0, 0, 0.75);
+}
+footer a:hover {
+  color: rgba(0, 0, 0, 1);
 }
 @media (max-width: 750px) {
   html {

@@ -13,6 +13,11 @@ body {
   max-width: 1200px;
   margin: 0 auto; }
 
+.row {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 2em; }
+
 .push {
   margin-bottom: 3rem;
   float: none;
@@ -132,10 +137,13 @@ footer a:hover {
   html {
     font-size: 16px; }
 
+  .row {
+    margin-bottom: 0; }
+
   .main article {
     float: none;
     width: 94%;
-    margin: 0 3% 1em; } }
+    margin: 0 3% 4em; } }
 @media (max-width: 650px) {
   header h1 span {
     display: block;

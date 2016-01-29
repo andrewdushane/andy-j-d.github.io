@@ -100,7 +100,7 @@ header p span:nth-child(even) {
 .main article:nth-child(even) {
   margin-right: 0; }
 
-.main article img {
+.main article img, .main article .embed-wrapper {
   width: 100%;
   display: block;
   float: none;
@@ -108,6 +108,18 @@ header p span:nth-child(even) {
   padding: 0.5rem;
   background: #EEE;
   border-radius: 10px; }
+
+.embed {
+  width: 100%;
+  height: 0;
+  padding-bottom: 60.75%;
+  position: relative; }
+  .embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 .main article h2 {
   text-align: center; }
@@ -132,6 +144,9 @@ footer a {
 
 footer a:hover {
   color: black; }
+
+footer .inner {
+  margin-left: -1em; }
 
 @media (max-width: 750px) {
   html {

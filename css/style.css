@@ -85,6 +85,12 @@ header p span {
 header p span:nth-child(even) {
   color: #C1D1FF; }
 
+header p img {
+  display: inline;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 0 0.2em -0.2em 0; }
+
 .main {
   padding: 1rem 5%;
   height: 100%;

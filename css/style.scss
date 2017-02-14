@@ -41,6 +41,9 @@ header {
   text-align: center;
   background: #3A4C7F;
   color: white;
+  a, a:hover, {
+    color: #EDEDED;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
@@ -93,6 +96,9 @@ header p span {
 }
 header p span:nth-child(even) {
   color: $light-blue;
+  a, a:hover {
+    color: $light-blue;
+  }
 }
 
 header p img {
